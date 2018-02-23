@@ -1,12 +1,9 @@
-# Walden 最适合东半球同学使用的文档框架
-
-[![Build Status](https://travis-ci.org/meolu/walden.svg?branch=master)](https://travis-ci.org/meolu/walden)
+# 基于python的实验室自动化测试系统
 
 或许是极人性化的一个文档管理框架，最适合部署在内网作为内网文档管理，url即目录层级。markdown+git+web搭配，让你一下子就喜欢上写文档分享。一分钟上手，有兴趣可挖掘隐藏技巧。
 
-[官网主页](http://www.huamanshu.com/walden.html) | [体验Demo](http://walden.huamanshu.com/) | 案例-[瓦力-walle](http://doc.huamanshu.com/瓦力/)
-
 ## 组网图
+
 ![walden](https://raw.github.com/meolu/Walden/master/static/screenshots/walden.gif)
 
 
@@ -20,11 +17,13 @@
 * 任意定义目录嵌套、定义文档，目录与文档均可中文（甚至推荐中文）
 * 文档、图片、附件同步保存至git，这下你安心了吧
 
-## 一、安装
+## 必备组件
 
-零安装、零配置，无数据库，不需要composer，开箱即用。只需要你有一台安装了git命令行，php5.3，nginx环境的linux机器。
+[python3.4.3](https://www.python.org/downloads/release/python-343/)
+python库
 
-## 二、快速开始
+
+## 程序说明
 
 ```php
 vi Config.php
