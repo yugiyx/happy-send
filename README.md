@@ -19,8 +19,9 @@
 
 ## 必备组件
 
-*[python3.4.3](https://www.python.org/downloads/release/python-343/)
-*pyvisa `pip install -U pyvisa`
+* [python3.4.3](https://www.python.org/downloads/release/python-343/)
+* 库pyvisa `pip install -U pyvisa`
+* [National Instruments’s VISA](http://www.ni.com/visa/)
 
 
 ## 程序说明
