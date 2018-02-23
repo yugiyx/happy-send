@@ -20,9 +20,11 @@
 ## 必备组件
 
 * [python3.4.3](https://www.python.org/downloads/release/python-343/)
-* 库pyvisa `pip install -U pyvisa`
+* python库pyvisa  Pip安装`pip install -U pyvisa`
 * [National Instruments’s VISA](http://www.ni.com/visa/)
 
+安装说明：
+考虑很多实验室仍然使用的Windows XP系统，python选择的是最后一个支持xp版本3.4.3
 
 ## 程序说明
 
