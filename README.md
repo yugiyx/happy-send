@@ -18,15 +18,20 @@
 * 文档、图片、附件同步保存至git，这下你安心了吧
 
 ## 必备组件
-
+Python及相关库
 * [python3.4.3](https://www.python.org/downloads/release/python-343/)
-* python库pyvisa 1.8  Pip安装`pip install -U pyvisa`
+* [pyvisa 1.8](https://pypi.python.org/pypi/PyVISA/1.8)
 * [pyserial 3.0](https://pypi.python.org/pypi/pyserial/3.0)
+* [xlrd 1.1.0](https://pypi.python.org/pypi/xlrd/1.1.0)
+* [xlwt 1.3.0](https://pypi.python.org/pypi/xlwt/1.3.0)
+* [xlutils 2.0.0](https://pypi.python.org/pypi/xlutils/2.0.0)
+
+VISA
 * [National Instruments’s VISA](http://www.ni.com/visa/)
 
 安装说明：
 考虑很多实验室仍然使用Windows XP系统，并且没有网络或者没有管理员权限，不能安装任何程序（作者公司提供的就是这种工作环境，吐槽一下）。
-* Python选择的是最后一个支持xp版本3.4.3。pyserial选择的3.0。
+* Python选择的是最后一个支持xp版本3.4.3。pyserial选择的3.0。其他库没有特别要求，使用最新版即可。
 * 可以在能够安装python和库的机器上，安装好全部库，打包整个python文件夹，直接拷贝到其他机器使用，在Sublime等文件编辑器中增加路径即可。
 
 ## 程序说明
