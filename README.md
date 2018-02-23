@@ -80,7 +80,7 @@ server {
 
 
 ## CHANGELOG
-瓦尔登的版本记录：[CHANGELOG](https://github.com/meolu/walden/blob/master/CHANGELOG.md)
+版本记录：[CHANGELOG](https://github.com/yugiyx/happy-send/blob/master/CHANGELOG.md)
 
 
 
