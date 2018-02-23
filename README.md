@@ -6,7 +6,7 @@
 
 [官网主页](http://www.huamanshu.com/walden.html) | [体验Demo](http://walden.huamanshu.com/) | 案例-[瓦力-walle](http://doc.huamanshu.com/瓦力/)
 
-## 演示
+## 组网图
 ![walden](https://raw.github.com/meolu/Walden/master/static/screenshots/walden.gif)
 
 
