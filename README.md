@@ -20,11 +20,14 @@
 ## 必备组件
 
 * [python3.4.3](https://www.python.org/downloads/release/python-343/)
-* python库pyvisa  Pip安装`pip install -U pyvisa`
+* python库pyvisa 1.8  Pip安装`pip install -U pyvisa`
+* [pyserial 3.0](https://pypi.python.org/pypi/pyserial/3.0)
 * [National Instruments’s VISA](http://www.ni.com/visa/)
 
 安装说明：
-考虑很多实验室仍然使用的Windows XP系统，python选择的是最后一个支持xp版本3.4.3
+考虑很多实验室仍然使用Windows XP系统，并且没有网络或者没有管理员权限。
+Python选择的是最后一个支持xp版本3.4.3。pyserial选择的3.0。
+可以在能够安装python和库的机器上，安装好全部库，直接打包整个python文件夹，直接拷贝到其他机器使用，在Sublime等文件编辑器中增加路径即可。
 
 ## 程序说明
 
@@ -75,11 +78,12 @@ server {
 最后，当然希望你可以给此项目提个pull request，目前只有一个bootstrap的默认模板：(
 
 
-## to do list
+## 下一步计划
 
-* 文档搜索
-* 文档删除，重命名UI化
-
+* 修正目前程序内部仍然有一处需要根据不同测试模块手工修改的缺陷。
+* 找到合适的 1XN 光swtich，可以把被测端口全部连上，一次全部测完，无需手工拔插端口和修改代码选择不同被测端口。
+* 优化代码，使程序更简洁优雅。
+* 将所有配置修改部分，全部放入excel表格，做到程序完全黑盒化。
 
 ## CHANGELOG
 版本记录：[CHANGELOG](https://github.com/yugiyx/happy-send/blob/master/CHANGELOG.md)
