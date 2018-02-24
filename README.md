@@ -4,7 +4,7 @@
 
 ## 组网图
 
-![walden](https://raw.github.com/meolu/Walden/master/static/screenshots/walden.gif)
+![connect](https://github.com/yugiyx/python_happy_test/blob/master/template%20and%20diagram/device%20connect%20diagram.png)
 
 
 ## 特点
@@ -97,7 +97,7 @@ server {
 
 ## 版本记录
 
-版本记录：[CHANGELOG](https://github.com/yugiyx/happy-send/blob/master/CHANGELOG.md)
+[CHANGELOG](https://github.com/yugiyx/happy-send/blob/master/CHANGELOG.md)
 
 
 
