@@ -50,7 +50,7 @@
 
 
 ## 配置程序说明
-
+以PD测试的配置部分为例。以下代码需要根据实际情况配置。
 ```python
 # Select Test PD ID
 test_pd = 'APC1'
@@ -98,34 +98,7 @@ pm_report = []
 print(all_set_values[0])
 ```
 
-## 三、nginx简单配置
-
-```
-server {
-    listen       80;
-    server_name  Walden.dev;
-    root /the/dir/of/Walden;
-    index index.php;
-
-    # 建议放内网做文档服务
-    #allow 192.168.0.0/24;
-    #deny all;
-
-    location / {
-        try_files $uri $uri/ /index.php$is_args$args;
-    }
-
-    location ~ \.php$ {
-        try_files $uri =404;
-        fastcgi_pass   127.0.0.1:9000;
-        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-    }
-}
-```
-
-
-## 自定义模板
+## 可借鉴方法
 
 前端同学可以自己定义模板，在templates下新建一个模板目录，包含预览模板：`markdown-detail-view.php`，编辑模板：`markdown-editor-view.php`，然后修改`Config.php`的`template`为你的模板项目。
 
