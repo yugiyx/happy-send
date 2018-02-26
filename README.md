@@ -51,17 +51,51 @@
 
 ## 配置程序说明
 
-```php
-vi Config.php
-return [
-    // 项目留空保存文档和附件的git地址，可以是在github，好吧，不想公开，可以bitbucket。
+```python
+# Select Test PD ID
+test_pd = 'APC1'
+test_edfa = 'E1'
 
-    // 1.php进程的用户的id_rsa.pub已添加到git的ssh-key。这样才可以推送markdown下的文件。
-    'git' => 'git@github.com:meolu/Walden-markdown-demo.git',
+# Config test enviorment
+tls_1510_pd = ['PD2']
+tls_1610_pd = ['PD16']
+out_pd = ['PD9', 'PDT1', 'PDT2', 'APC1', 'APC2']
+edfa = edfa.EdfaOFP2(2)
+att_pm = instrument.AttPmN7752A(30)
+pm = instrument.Pm8163A(21)
+switch = instrument.SwZHDIY(6)
+file = instrument.DataProcess()
 
-    // 2.好吧，如果实在不想加key，可以直接明文用户名密码认证的http(s)地址也可以。
-    // 'git' => 'https://username:password@github.com/meolu/Walden-markdown-demo.git',
-];
+# Initial test module.Modified according to different modules
+if test_pd in tls_1510_pd:
+    pm.set_pm_wavlength(1510)
+    att_pm.set_att_wavlength(1510)
+    switch.set_sw('TLS_EDFA_PM')
+    pin_offset = 0
+    pout_offset = 1.8
+elif test_pd in tls_1610_pd:
+    pm.set_pm_wavlength(1610)
+    att_pm.set_att_wavlength(1610)
+    switch.set_sw('TLS_EDFA_PM')
+    pin_offset = 0
+    pout_offset = 1.8
+else:
+    pm.set_pm_wavlength(1550)
+    att_pm.set_att_wavlength(1550)
+    switch.set_sw('MLS_EDFA_PM')
+    pin_offset = 1
+    pout_offset = -1
+att_pm.enable_apc_mode(1)
+att_pm.set_apc_value(-10)
+edfa.set_edfa_mode(test_edfa, 'AGC')
+edfa.write_reg('41', '11')  # Modified
+edfa.set_edfa_gain(test_edfa, 18)
+
+# Read set values from excel file
+all_set_values = file.open_config('test_case.xls', test_pd)
+pd_report = [[], [], []]
+pm_report = []
+print(all_set_values[0])
 ```
 
 ## 三、nginx简单配置
