@@ -36,7 +36,16 @@
 * 可以在能够安装python和库的机器上，安装好全部库，打包整个python文件夹，直接拷贝到其他机器使用，在Sublime等文本编辑器中增加路径即可绿色化。
 
 
-## 程序功能说明
+## 程序组件说明
+
+`data_calc.py`	Add files via upload	5 days ago
+`edfa.py`	Add files via upload	5 days ago
+`instrument.py`	Add files via upload	5 days ago
+`nf_test.py`	Add files via upload	5 days ago
+`pd_test.py`	Add files via upload	5 days ago
+`test_case.xls`	Add files via upload	5 days ago
+`test_result_all.xl`	Add files via upload	5 days ago
+`test_result_pd.xls`
 
 ## 配置程序说明
 
