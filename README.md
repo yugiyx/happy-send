@@ -38,14 +38,16 @@
 
 ## 程序组件说明
 
-`data_calc.py`	Add files via upload	5 days ago
-`edfa.py`	Add files via upload	5 days ago
-`instrument.py`	Add files via upload	5 days ago
-`nf_test.py`	Add files via upload	5 days ago
-`pd_test.py`	Add files via upload	5 days ago
-`test_case.xls`	Add files via upload	5 days ago
-`test_result_all.xl`	Add files via upload	5 days ago
-`test_result_pd.xls`
+
+* `edfa.py`	待测设备命令接口
+* `instrument.py`	实验室仪器虚拟化接口
+* `pd_test.py`	PD测试程序
+* `nf_test.py`	NF测试程序
+* `test_case.xls`	全部测试的测试条件（输入）
+* `test_result_pd.xls`	PD测试结果（输出）
+* `data_calc.py`	NF测试计算加汇总程序
+* `test_result_all.xl`	NF测试结果汇总（输出）
+
 
 ## 配置程序说明
 
