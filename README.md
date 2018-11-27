@@ -2,6 +2,7 @@
 
 如果能用最简单的方法（Python）实现需求，就无需使用更复杂的方法。杀鸡焉用牛刀（Visual Studio）。
 
+
 ## 组网图
 
 ![connect](https://github.com/yugiyx/python_happy_test/blob/master/template%20and%20diagram/device%20connect%20diagram.png)
@@ -13,6 +14,7 @@
 * 黑盒化。经过简单训练后，任何人都可以操作。
 * 现实设备和仪器虚拟化。现实怎么操作设备仪器，软件就怎么操作。理论可以无限扩展。
 * 使用excel作为参数输入和结果输出。更容易测试用例结合。
+* 基于此套代码修改，可覆盖100%通信行业实验室的仪器和测试case模型。
 
 ## 必备组件
 
